@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palarnia Smaków – Smak, który budzi zmysły</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="burger" id="burger" aria-label="Otwórz menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="side-menu" id="sideMenu" aria-hidden="true">
+    <a href="#about-section" class="close-menu">O nas</a>
+    <a href="#roasting" class="close-menu">Recepty</a>
+    <a href="#products" class="close-menu">Ceny</a>
+    <a href="#newsletter" class="close-menu kontakt">Kontakty</a>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Palarnia<br />Smaków</h1>
+      <p>Smak, który budzi zmysły</p>
+      <a href="#roasting" class="btn-primary">Zasmakuj</a>
+    </div>
+  </section>
+
+  <section class="roasting" id="roasting">
+    <h2 class="section-title">Która kawa jest dla Ciebie najlepsza?</h2>
+    <div class="roasting-grid">
+      <div class="roast-card reveal">
+        <img src="img/pexels.jpg" alt="Lekkie pieczenie" loading="lazy" />
+        <span>Lekkie pieczenie</span>
+      </div>
+      <div class="roast-card reveal reveal-delay-1">
+        <img src="img/pexels-photo-9899787.jpeg" alt="Średnie pieczenie" loading="lazy" />
+        <span>Średnie pieczenie</span>
+      </div>
+      <div class="roast-card reveal reveal-delay-2">
+        <img src="img/coffee-5462272_1280.jpg" alt="Ciemne pieczenie" loading="lazy" />
+        <span>Ciemne pieczenie</span>
+      </div>
+    </div>
+    <div class="roasting-center">
+      <a href="#products" class="btn-outline">Dowiedz się więcej</a>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="products-container">
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <img src="img/coffee4-removebg-preview.png" alt="Papua New Guinea" loading="lazy" />
+          <h3>Papua new guinea<br />sigri Estate</h3>
+          <button class="btn-dark">Kup</button>
+        </div>
+        <div class="product-card reveal reveal-delay-1">
+          <img src="img/coffee4-removebg-preview2.png" alt="Guatemala" loading="lazy" />
+          <h3>Guatemala Los<br />Gigantes</h3>
+          <button class="btn-dark">Kup</button>
+        </div>
+        <div class="product-card reveal reveal-delay-2">
+          <img src="img/coffee4-removebg-preview3.png" alt="Ethiopia" loading="lazy" />
+          <h3>Ethiopia Guji<br />Natural</h3>
+          <button class="btn-dark">Kup</button>
+        </div>
+        <div class="product-card reveal reveal-delay-3">
+          <img src="img/coffee4-removebg-preview4.png" alt="Panama" loading="lazy" />
+          <h3>Panama Boquete-<br />Maunier Estate</h3>
+          <button class="btn-dark">Kup</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about-section">
+    <div class="about-inner">
+      <div class="about-img-wrapper reveal">
+        <div class="shape-circle dark"></div>
+        <img class="about-img" src="img/кубек54b113f3918b110cf8e657eb90c488ac-removebg-preview.png"
+          alt="Kawa – nasza pasja" loading="lazy" />
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <h2>Kawa to nasza pasja!</h2>
+        <p>Z każdego ziarna wydobywamy pełnię smaku, dbając o każdy szczegół procesu palenia.</p>
+        <p>Łączymy tradycję z nowoczesnością, oferując kawę najwyższej jakości, która zachwyca aromatem i
+          intensywnością.</p>
+        <a href="#newsletter" class="btn-outline">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="testimonials-container">
+      <div class="testimonial-row reveal">
+        <div class="test-img-wrapper">
+          <img src="img/1e2707a5ba640ab5339deffc21eb04fb.jpg" alt="Agnieszka W." loading="lazy" />
+        </div>
+        <div class="test-text">
+          <blockquote>„Najlepsza kawa, jaką piłam! Palarnia oferuje niesamowitą różnorodność smaków, które zmieniają się
+            z każdą filiżanką. Uwielbiam, jak świeżość i aromat utrzymują się przez długi czas – prawdziwa uczta dla
+            zmysłów!"</blockquote>
+          <cite>Agnieszka W.</cite>
+        </div>
+      </div>
+      <div class="testimonial-row reverse reveal reveal-delay-1">
+        <div class="test-text left-align">
+          <blockquote>„Kawa z tej palarni to coś naprawdę wyjątkowego! Każda mieszanka ma swoją unikalną głębię smaku, a
+            świeżość ziaren czuję w każdym łyku. To kawa, którą piję z przyjemnością każdego dnia.”</blockquote>
+          <cite>Tomasz P.</cite>
+        </div>
+        <div class="test-img-wrapper">
+          <div class="shape-circle light"></div>
+          <img src="img/2618e67535f8e0091b42cb2a0de5d40c.jpg" alt="Tomasz P." loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content reveal">
+        <h2>Zapisz się na<br />newsletter!</h2>
+        <div class="form-group">
+          <input type="text" placeholder="Imię" aria-label="Imię" />
+          <input type="email" placeholder="E-mail" aria-label="E-mail" />
+          <button class="btn-dark" onclick="this.textContent='Dziękujemy!';">Prześlij</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p>Adres: ul. St. Marka 6</p>
+      <p>e-mail: palarnia_smakow@gmail.com</p>
+    </div>
+    <div class="footer-contact">
+      <p>+48 573 56 32</p>
+      <p>+48 573 56 33</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
