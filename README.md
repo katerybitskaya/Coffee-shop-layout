@@ -13,10 +13,11 @@ A responsive landing page for the coffee roastery **Palarnia Smaków**. Features
 
 ```
 coffee/
-├── index.html      # Main page
-├── styles.css      # All styles and responsive rules
-├── script.js       # JavaScript interactions
-└── img/            # Images (photos, product visuals)
+└── public/             # Site root (served by the web server)
+    ├── index.html      # Main page
+    ├── styles.css      # All styles and responsive rules
+    ├── script.js       # JavaScript interactions
+    └── img/            # Images (photos, product visuals)
 ```
 
 ## Sections
@@ -31,15 +32,16 @@ coffee/
 
 No build step required — pure static site.
 
-Open `index.html` directly in a browser, or serve with any static server:
+Open `public/index.html` directly in a browser, or serve the `public/` folder with any static server:
 
 ```bash
-npx serve .
+npx serve public
 # or
-python -m http.server 8080
+cd public && python -m http.server 8080
 ```
 
 ## Deployment
 
-Upload all files to the web server root. No server-side processing required.
+Upload the contents of `public/` to the web server root (or point the document root to `public/`).
+No server-side processing required.
 Works with Apache, Nginx, or any static hosting (GitHub Pages, Netlify, etc.).
