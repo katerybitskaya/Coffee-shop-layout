@@ -275,10 +275,11 @@ section {
 }
 
 .roast-card img {
+  display: block;
   width: 100%;
   max-width: 250px;
   aspect-ratio: 1;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   object-fit: cover;
   border-radius: 20px;
   transition: transform 0.4s;
@@ -289,6 +290,7 @@ section {
 }
 
 .roast-card span {
+  display: block;
   font-size: 1rem;
   font-weight: 400;
   color: var(--tan);
@@ -660,9 +662,13 @@ footer p {
     justify-content: center;
   }
 
-  .testimonial-row,
-  .testimonial-row.reverse {
+  .testimonial-row {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-row.reverse {
+    flex-direction: column-reverse;
     text-align: center;
   }
 
@@ -698,6 +704,19 @@ footer p {
   .product-card img {
     margin-top: -60px;
   }
+
+  .products-grid {
+    gap: 64px 20px;
+  }
+
+  .product-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .product-card .btn-dark {
+    font-size: 1rem;
+    padding: 14px 42px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -705,8 +724,30 @@ footer p {
     padding: 20px;
   }
 
+  .hero {
+    padding: 130px 28px 90px;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
   .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 4.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+
+  .hero-content .btn-primary {
+    padding: 17px 52px;
+    font-size: 1.05rem;
   }
 
   .products-grid {
